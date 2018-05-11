@@ -4,6 +4,7 @@ import { belongsTo, hasMany } from 'ember-data/relationships';
 
 export default DS.Model.extend({
   index: attr(),
+  label: attr(),
   displayType: attr(),
   options: attr('json'),
   identifier: attr(),
