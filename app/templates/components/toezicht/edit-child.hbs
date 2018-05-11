@@ -1,1 +1,5 @@
 {{component childComponentName model=model solution=solution}}
+
+{{#if subform}}
+  {{toezicht/form-node model=subform.formNode solution=solution}}
+{{/if}}

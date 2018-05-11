@@ -1,3 +1,4 @@
+import EmberObject from '@ember/object';
 import { sort } from '@ember/object/computed';
 import { inject as service } from '@ember/service';
 import Component from '@ember/component';
@@ -7,7 +8,7 @@ export default Component.extend({
   init() {
     this._super(...arguments);
     var formSolution = this.get('store').createRecord('form-solution', {
-      answers: {}
+      answers: new EmberObject()
     });
     this.set('solution', formSolution);
   },
