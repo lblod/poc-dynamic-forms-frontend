@@ -4,6 +4,5 @@ import { belongsTo } from 'ember-data/relationships';
 
 export default DS.Model.extend({
   name: attr(),
-  owner: belongsTo('person'),
-  solution: belongsTo('form-solution')
+  owner: belongsTo('person')
 });
