@@ -48,6 +48,7 @@ export default Component.extend({
           console.log('New path is ' + newPath);
           console.log('Kind is ' + kind);
           const prop = `solution.${newPath}`;
+          // TODO shouldn't we await this.get(prop) ?
           if (kind && !this.get(prop).content) {
             console.log('setting property: ' + prop);
             const resource = this.get('store').createRecord(kind, {});
